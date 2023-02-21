@@ -1,24 +1,116 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+/* Home page */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+
+
+/* Restaurant page */
+
+
+/* Hotel page */
+
+
+/* Room page */
+
+
+/* Serhii */
+
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  /* Fill Color Styl */
+  --akzent-yellow: #F3C653;
+  --whit: #ffffff;
+  --black: #000000;
+  --lemon: #FFFDEE;
+  --dark-lemon: #F0ECD6;
+  --footer: #0E0C07;
+  --main-button: rgba(0, 0, 0, 0.4);
+  --main-arrow: rgba(0, 0, 0, 0.65);
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* Text Color*/
+  --text-one-color: #7A7A7A;
+  --text-two-color: #C79002;
+  --text-three-color: #E5E5E5;
+  --text-four-color: #B4B4B4;
+  --text-five-color: #494848;
+  --text-six-color: #BABABA;
+  --text-seven-color: #828282;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* FONT */
+
+    /* font-weight */
+    --font-weight-body: 700;
+
+    /* font-size */
+
+    /* line-height */
+    --line-height-body: 1.25;
+
+    /* letter-spacing */
+    --letter-spacing-body: 0.02em;
+}
+
+body {
+  margin: 0;
+  background-color: var(--lemon);
+  color: var(--text-one-color);
+
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+}
+
+@font-face {
+  font-family: 'Mimino';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Mimino Bold'), local('Mimino-Bold'),
+    url(./FilmP3Bold.woff2)
+      format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .container {
+    max-width: 414px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  background-color: var(--black);
+  color: var(--whit);
 }
